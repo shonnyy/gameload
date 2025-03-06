@@ -1,0 +1,89 @@
+#ChromeMissingUnityPlayer {
+    display: none !important;
+}
+.install-gameload {
+    display: none;
+}
+
+/* temporary */
+#kongregateUnityDiv{
+    visibility: visible !important;
+}
+
+/* Gameload embed */
+.gameload_window {
+    margin: auto;
+    background-color: #f2fdff !important;
+    display: table;
+    float: none !important;
+}
+
+.gameload_content {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: transparent;
+    float: none !important;
+}
+
+.gameload_playgame {
+    width: 200px;
+    height: 65px;
+    display: block;
+    margin: auto;
+    background: url('chrome-extension://__MSG_@@extension_id__/playgameload.png') no-repeat;    
+}
+
+.gameload_playpage {
+    margin: 10px auto 0 auto;
+    border: 1px solid #c7d3d6;
+    display: block;
+    width: 178px;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(#feffff, #dcf4f9);
+    box-sizing: content-box !important;
+}
+
+.gameload_playpage_2 {
+    padding: 3px 10px;
+}
+
+a.gameload_playpage {
+    color: #21d1f1 !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0px !important;
+    font-size: 13px !important;
+    font-family: Arial, sans-serif;
+}
+
+.gameload_not_working, .gameload_check_video {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #DD4B38;
+    display: none;
+}
+
+.gameload_not_working a, .gameload_check_video a {
+    color: #337ab7 !important;
+    text-decoration: none;
+}
+.gameload_not_working a:hover, .gameload_check_video a:hover {
+    text-decoration: underline;
+}
+
+/*.gameload_small_icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: 30px 30px;
+    background-image: url('chrome-extension://__MSG_@@extension_id__/icon-128.png');
+    background-repeat:no-repeat;
+    vertical-align: middle;
+    filter: grayscale(100%);
+}*/
+.gameload_small_play {
+    vertical-align: middle;
+    font-size: 28px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GameLoad Popup</title>
+<link rel="stylesheet" type="text/css" href="popup.css">
+<script type="text/javascript" src="jquery-1.12.3.js"></script>
+<script type="text/javascript" src="popup.js"></script>
+</head>
+<body>
+
+<div class="bottom">
+	<label for="extension">On/Off Extension</label>
+	<input id="extension" type="checkbox" /> 
+</div>
+
+<div class="bottom">
+	<label for="website">On/Off for this website</label>
+	<input id="website" type="checkbox" /> 
+</div>
+
+<div id="open_site" class="bottom">
+	<a href="#">&#9654; Open this site in GameLoad</a>
+</div>
+    
+<div id="check_extension">
+	<a href="#">Is GameLoad working ?</a>
+</div>
+
+<div id="report">
+	<a href="#">REPORT</a>
+	<div id="report_content">
+		<form action="http://www.gameload.top/report/" method="post">
+			<textarea name="message"></textarea>
+			<input type="submit" value="Submit" />
+		</form>
+	</div>
+	<p id="success">Report was sent successfully.</p>
+</div>
+
+</body>
+</html>

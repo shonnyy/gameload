@@ -1,0 +1,43 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "GameLoad - play Unity Games (Win only)",
+  "short_name" : "GameLoad",
+  "version": "2.0.0.4",
+  "manifest_version": 2,
+  "description": "Run Unity games through your browser in local application. (Windows only)",
+  "icons": {
+    "128": "icon-128.png"
+  },
+  "browser_action": {
+    "default_icon": { "19": "icon-128.png" },
+    "default_title": "GameLoad",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "run_at": "document_start",
+    "css": ["content.css"],
+    "js": ["jquery-1.12.3.js", "content.js", "user-agent.js"],
+    "all_frames": true
+  }],
+  "web_accessible_resources": [
+    "unity.js",
+    "user-agent.js",
+    "special.js",
+    "playgameload.png"
+  ],
+  "permissions": [
+    "nativeMessaging",
+    "contextMenus",
+    "tabs",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}
